@@ -136,6 +136,7 @@ dmypy.json
 .DS_Store
 
 # temporary notebooks
+corpus_creation-Copy1.ipynb
 
 # images
 
