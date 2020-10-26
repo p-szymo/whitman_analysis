@@ -191,3 +191,32 @@ def part_adder(df, index, column, drop=False, reset_index=False):
         df_added.reset_index(drop=True, inplace=True)
 
     return df_added
+
+
+# count number of words in a text
+def word_counter(lines):
+
+    '''
+    Function to count the number of words in a list of strings.
+
+
+    Input
+    -----
+    lines : list (str)
+        List of strings to count.
+
+
+    Output
+    ------
+    word_count : int
+        Total number of words across all strings.
+
+    '''
+
+    # calculate the number of words per line
+    line_count = [len(line.split()) for line in lines]
+
+    # add up the word counts of each line
+    word_count = sum(line_count)
+
+    return word_count
