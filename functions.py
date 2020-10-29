@@ -1,14 +1,13 @@
+# dataframe packages
 import pandas as pd
 import string
-import pronouncing as pr
 
 # nlp packages
+import pronouncing as pr
 import nltk
 from nltk import RegexpTokenizer
 from nltk.stem import WordNetLemmatizer
-# from nltk.corpus import stopwords
 from nltk.corpus import wordnet
-# from textblob import TextBlob as tb
 
 
 def string_adder(source, orig, start_index, end_index):
